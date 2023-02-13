@@ -22,7 +22,7 @@ def rename_cols(df):
 
 #mapping int values in categorical columns to strings for clearer exploration and vizualization
 def replace_cat_values(df_strings):
-    
+
     df_strings['sex'] = df_strings['sex'].replace(0,'female')
     df_strings['sex'] = df_strings['sex'].replace(1, 'male')
 
@@ -37,17 +37,19 @@ def replace_cat_values(df_strings):
     df_strings['rest_ecg'] = df_strings['rest_ecg'].replace(1,'ST-T wave abnormal')
     df_strings['rest_ecg'] = df_strings['rest_ecg'].replace(2,'left ventricular hypertrophy')
 
-    df_strings['exercise_induced_angine'].astype(bool)
+    df_strings['exercise_induced_angine'] = df_strings['exercise_induced_angina'].astype(bool)
 
     df_strings['st_slope'] = df_strings['st_slope'].replace(0,'unsloping')
     df_strings['st_slope'] = df_strings['st_slope'].replace(1,'flat')
     df_strings['st_slope'] = df_strings['st_slope'].replace(2,'downsloping')
 
-    df_strings['defect_type'] = df_strings['defect_type'].replace(0,'no_defect')
+    df_strings['defect_type'] = df_strings['defect_type'].replace(0, None)
     df_strings['defect_type'] = df_strings['defect_type'].replace(1,'fixed_defect')
     df_strings['defect_type'] = df_strings['defect_type'].replace(2,'normal')
     df_strings['defect_type'] = df_strings['defect_type'].replace(3,'reversable')
 
-    df_strings['high_risk_of_mi'].astype(bool)
+    df_strings['high_risk_of_mi'] = df_strings['high_risk_of_mi'].astype(bool)
+
+    df_strings = df_strings.dropna()
     
     return df_strings
