@@ -8,5 +8,5 @@ def summarize(df):
     info = df.info()
     describe = df.describe()
     distributions = df.hist(figsize=(24, 10), bins=20)
-    pairplot = sns.pairplot(df)
-    return shape, info, describe, distributions, pairplot
+    #pairplot = sns.pairplot(df)
+    return shape, info, describe, distributions, #pairplot
