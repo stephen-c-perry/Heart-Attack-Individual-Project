@@ -8,17 +8,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
 
-'''
-#function for my best performing model
-def best_performing_model(X_Train, y_Train, X_test, y_test):
-    
-    rf = RandomForestClassifier(max_depth=9, min_samples_leaf=3, random_state=123)
-    rf.fit(X_Train, y_Train)
-
-    print('Random Forest')
-    print(f"Test Accuracy: {rf.score(X_test, y_test):.2%}")
-'''
-
 #function to run multiple random forest to compare for best accuracy
 def get_decision_tree_multiple(X_Train, y_Train, X_val, y_val):
     metrics = []
@@ -74,9 +63,6 @@ def get_random_forest_multiple(X_Train, y_Train, X_val, y_val):
     df1_sorted = df1.sort_values(by=['validate_accuracy'], ascending=False).head(10)
 
     return df1_sorted
-
-
-
 
 
 
