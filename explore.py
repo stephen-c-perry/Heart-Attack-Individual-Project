@@ -154,7 +154,9 @@ def t_test_two_tailed(data1, data2, alpha=0.05):
 # testing dependence/relationship of 2 discrete variables
 
 def chi_square_test(data1, data2, alpha=0.05):
-    chi2, p, dof, expected = stats.chi2_contingency(data1, data2)
+    observed = pd.crosstab(data1, data2)
+    chi2, p, degf, expected = stats.chi2_contingency(observed)
+
     if p < alpha:
         print('Reject the null hypothesis')
     else:

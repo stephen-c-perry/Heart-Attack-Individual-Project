@@ -1,3 +1,7 @@
+# Goal
+
+To build a machine learning model to classify patients into heart attack risk categories.  This would provide very fast identification of high-risk patients without the time-consuming, manual review of records.  Patients identified as high risk can be sent for further review by a doctor and have frequent follow-ups along with nutrition guidance.
+
 
 
 

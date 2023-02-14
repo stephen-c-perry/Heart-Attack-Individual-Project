@@ -35,9 +35,9 @@ def replace_cat_values(df_strings):
 
     df_strings['st_slope'] = df_strings['st_slope'].replace(0,'unsloping').replace(1,'flat').replace(2,'downsloping')
 
-    df_strings['defect_type'] = df_strings['defect_type'].replace(0, None).replace(1,'fixed_defect').replace(1,'fixed_defect').replace(2,'normal').replace(3,'reversable')
+    df_strings['defect_type'] = df_strings['defect_type'].replace(0, None).replace(1,'fixed_defect').replace(1,'fixed_defect').replace(2,'normal').replace(3,'reversible')
     
-    df_strings['high_risk_of_mi'] = df_strings['high_risk_of_mi'].astype(bool)
+    #df_strings['high_risk_of_mi'] = df_strings['high_risk_of_mi'].astype(bool)
 
     df_strings = df_strings.dropna()
     
