@@ -42,6 +42,7 @@ Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or 
 Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
 thalach : maximum heart rate achieved
 target : 0= less chance of heart attack 1= more chance of heart attack
+st-slope: description of slope shape of ventricular relaxation, the s-t segment
 
 
 
