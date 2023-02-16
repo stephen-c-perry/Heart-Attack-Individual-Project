@@ -1,7 +1,13 @@
+"An ounce of prevention is worth a pound of cure" -Benjamin Franklin
+
 # Goal
 
-To build a machine learning model to classify patients into heart attack risk categories.  This would provide very fast identification of high-risk patients without the time-consuming, manual review of records.  Patients identified as high risk can be sent for further review by a doctor and have frequent follow-ups along with nutrition guidance.
+To build a machine learning model to classify patients into heart attack risk categories. 
 
+
+# Executive Summary
+
+This project proves the concept that machine learning can be used to classify patients into heart attack risk categories.  This is not a diagnostic tool, but a time-saving measure.  This would provide very fast identification of high-risk patients without the time-consuming, manual review of records.  Patients identified as high risk can be sent for further review by a doctor and have frequent follow-ups along with nutrition guidance.
 
 
 
@@ -30,6 +36,8 @@ st-slope: description of slope shape of ventricular relaxation, the s-t segment
 
 
 
+
+- - -
 
 **Medical Definitions
 1- Angina: chest pain due to reduced blood flow to the heart muscles. There're 3 types of angina: stable angina, unstable angina, and variant angina. To know more about angina click here: https://www.nhs.uk/conditions/angina/#:~:text=Angina%20is%20chest%20pain%20caused,of%20these%20more%20serious%20problems.
