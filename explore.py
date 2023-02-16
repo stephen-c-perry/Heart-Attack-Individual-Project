@@ -161,7 +161,7 @@ def chi_square_test(data1, data2, alpha=0.05):
         print('Reject the null hypothesis')
     else:
         print('Fail to reject the null hypothesis')
-    return chi2, p
+    
 
 
 
